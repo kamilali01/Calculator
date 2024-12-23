@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+  height: 80vh;
+  box-sizing: border-box;
+  
+}
+body{
+    background-image: url("./img/calc_bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.container{
+    
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    gap: 0;
+    height: 570px;
+    background-image: url("./img/calc_bgg.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 10px solid black;
+    
+}
+.container1{
+    height: 100px;
+    background-color: rgb(187, 181, 181);
+    border: 10px solid black;
+    text-align: right;
+        font-family: "Agu Display", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+          "MORF" 0;
+          font-size: 60px;
+}
+.container2{
+    height: 390px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr); /* 5 columns, equal width */
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-top: 10px;
+
+}
+.buttons{
+    left: 10px;
+    top: 5px;
+    display: grid;
+    background-color: #383434;
+    color: #2ca4f4;
+    width: 70px;
+    height: 70px;
+    border: 0;
+    text-align: center;
+    font-weight: initial;
+    font-size: 2em;
+    padding-top: 15px;
+    border-radius: 20px;
+    gap: 10px;
+    column-gap: 5px;
+}
+
+.buttons:hover{
+    background-color: #161515;
+}
+.buttons:active{
+    background-color: #000000;
+}
+.zero{
+    grid-column: span 2;
+    width: 155px;
+}
+.equal{
+    background-color: #2094fc;
+    color: white;
+}
+.equal:hover{
+    background-color: #1969af;
+}
+.equal:active{
+    background-color: #0e426e;
+}
+.operations{
+    background-color: #085cb4;
+    color: #76c3f7;
+}
+.operations:hover{
+    background-color: #074485;
+}
+.operations:active{
+    background-color: #05274b;
+}
+.delete, .minus, .percent{
+    background-color: #686464;
+    color: #9fa0a2;
+}
+.delete:hover, .minus:hover, .percent:hover{
+    background-color: #494646
+}
+.delete:active, .minus:active, .percent:active{
+    background-color: #2c2a2a
+}
