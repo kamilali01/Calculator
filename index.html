@@ -15,29 +15,29 @@
         <div class="container1">0</div>
         <div class="container2">
 
-            <button class="buttons delete">AC</button>
-            <button class="buttons minus">+/-</button>
-            <button class="buttons percent">%</button>
-            <button class="buttons operations">/</button>
+            <button class="buttons delete" onclick="clearDisplay()">AC</button>
+            <button class="buttons minus" onclick="negative()">+/-</button>
+            <button class="buttons percent" onclick="percentage()">%</button>
+            <button class="buttons operations" onclick="setOperator('/')">/</button>
 
-            <button class="buttons">7</button>
-            <button class="buttons">8</button>
-            <button class="buttons">9</button>
-            <button class="buttons operations">*</button>
+            <button class="buttons" onclick="addDisplay('7')">7</button>
+            <button class="buttons" onclick="addDisplay('8')">8</button>
+            <button class="buttons" onclick="addDisplay('9')">9</button>
+            <button class="buttons operations" onclick="setOperator('*')">*</button>
 
-            <button class="buttons">4</button>
-            <button class="buttons">5</button>
-            <button class="buttons">6</button>
-            <button class="buttons operations">-</button>
+            <button class="buttons" onclick="addDisplay('4')">4</button>
+            <button class="buttons" onclick="addDisplay('5')">5</button>
+            <button class="buttons" onclick="addDisplay('6')">6</button>
+            <button class="buttons operations" onclick="setOperator('-')">-</button>
 
-            <button class="buttons">1</button>
-            <button class="buttons">2</button>
-            <button class="buttons">3</button>
-            <button class="buttons operations">+</button>
+            <button class="buttons" onclick="addDisplay('1')">1</button>
+            <button class="buttons" onclick="addDisplay('2')">2</button>
+            <button class="buttons" onclick="addDisplay('3')">3</button>
+            <button class="buttons operations" onclick="setOperator('+')">+</button>
 
-            <button class="buttons zero">0</button>
-            <button class="buttons">.</button>
-            <button class="buttons equal">=</button>
+            <button class="buttons zero" onclick="addDisplay('0')">0</button>
+            <button class="buttons" onclick="addDisplay('.')">.</button>
+            <button class="buttons equal" onclick="operate()">=</button>
 
         </div>
     </div>
